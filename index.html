@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery validation</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Madhu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+</head>
+<body style="background: url(./assets/images/wallpaper.jpg)";>
+ <button id="Signup" class="btn btn-lg pull-right">Signup</button>
+ <div class="panel" style="display:none;">
+      <i class="glyphicon glyphicon-remove-sign pull-right" id="close" role="button" ></i>
+      <img src="./assets/images/icon.png">
+  <div class="text-center">
+     <span id="content">
+	  	<p>FourSquare learns what you like and leads you</p>
+	  	<p>to places you'll love.</p>
+     </span>
+  </div>
+  <!-- form starting  -->
+  <form action="" name="myform" onclick="">
+     <p class="well" id="pre">Looks like something went wrong.Please try submitting again</p>
+   <div class="row">
+     <div class="col-lg-6">
+      <div class="form-group">
+        <label class="control-label" for="email" id="lab">Email*</label>
+          <div class="inner-addon left-addon">
+           <span class="glyphicon glyphicon-envelope"></span><span><input type="email" class="form-control" id="email" name="" data-toggle="popover" data-content="Hm,that address is invalid.Check for typos?" data-placement="bottom"></span>
+            <i class="glyphicon glyphicon-ok form-control-feedback" id="emailsign" ></i>
+             <i class="glyphicon glyphicon-remove form-control-feedback" id="emailremove"></i>
+             <p class="pover"></p>
+          </div>
+       </div>
+     </div>
+     <div class="col-lg-6">
+      <div class="form-group">
+        <label class="control-label" for="Password" id="lab">Password*</label>
+          <div class="inner-addon left-addon">
+            <span class="glyphicon glyphicon-lock"></span><span><input type="password" name="" class="form-control" id="Password" data-toggle="popover" data-content="Your password atleast 6 character" data-placement="bottom"></span>
+             <i class="glyphicon glyphicon-ok form-control-feedback" id="passwordsign" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-remove form-control-feedback" id="passwordremove" aria-hidden="true"></i>
+            <p class="pover"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+   <div class="row">
+      <div class="col-lg-3">
+         <div class="form-group">
+           <label class="control-label" for="Firstname">FirstName*</label>
+             <div class="inner-addon left-addon">
+                 <span class="glyphicon glyphicon-user"></span><span><input type="text" class="form-control" id="Firstname" name="" data-toggle="popover" data-content="Please enter your Firstname" data-placement="bottom"></span>
+                 <i class="glyphicon glyphicon-ok form-control-feedback" id="namesign" aria-hidden="true"></i>
+                 <i class="glyphicon glyphicon-remove form-control-feedback" id="nameremove" aria-hidden="true"></i>
+                 <p class="pover"></p>
+             </div>
+         </div>
+      </div>
+     <div class="col-lg-3">
+        <div class="form-group">
+          <label class="control-label" for="lastname">Lastname</label>
+            <span><input type="text" id="lastname" class="form-control" name=""></span>
+        </div>
+     </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label class="control-label" for="dob" id="DOB">Birthday*</label><i class="glyphicon glyphicon-question-sign"></i>
+            <div class="inner-addon left-addon">
+                <span class="glyphicon glyphicon-gift"></span><span><input type="text" class="form-control" id="dob" name="" data-toggle="popover" data-placement="bottom" data-content="Please use this formate DD/MM/YYYY" placeholder="     DD    /    MM    /    YYYY"></span>
+                <i class="glyphicon glyphicon-ok form-control-feedback" id="DOBsign" aria-hidden="true"></i>
+                <i class="glyphicon glyphicon-remove form-control-feedback" id="DOBremove" aria-hidden="true"></i>
+            </div>
+         </div>
+       </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+         <label class="control-label" for="gender" id="genderlabel">Gender*</label><br>
+           <input type="radio" name="gender" id="gender" value="female">Female
+           <input type="radio" name="gender" id="gender" value="male">male
+           <input type="radio" name="gender" id="gender" value="Rather not say" checked>Rather not say
+      </div>
+     <div class="form-group">
+       <div class="col-lg-6">
+          <label class="control-label" for="Profile" id="profile">Profile Photo</label>
+            <input type="file" name="image" id="Profile">
+       </div>
+     </div>
+   </div>
+    <div>
+       <input type="submit"  name="submit"  id="submit" value="Signup" class="btn btn-lg text-center">
+    </div>
+  </form>
+  <!-- from ending -->
+ </div>
+ <script>
+ $("#Signup").click(function(){
+ 	$(".panel").show();
+ });
+ $("#close").click(function(){
+ 	$(".panel").hide();
+ });
+ </script>
+</body>
+</html>

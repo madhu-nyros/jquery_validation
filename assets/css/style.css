@@ -1,0 +1,178 @@
+body
+{
+	background-size: 100% 100% ;
+    background-repeat: no-repeat center fixed !important;
+}
+button
+{
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 30px !important;
+	padding-left: 20px !important;
+}
+.panel
+{
+	margin: 20px 320px 0px 260px;
+	padding: 40px 20px 60px 20px !important;
+	border:1px solid black !important;
+}
+i
+{
+	font-size: 10pt;
+	margin-top: -33px;
+	margin-right: -10px;
+	opacity: 0.3;
+}
+#content
+{
+	font-size: 25px !important;
+	line-height: 14px;
+}
+form
+{
+    margin-top: 80px !important;
+    opacity: 0.7;
+}
+label
+{
+	padding: 10px 0px 0px 55px;
+}
+/*email,password and birthday labels padding*/
+#lab,#DOB
+{
+	padding-left: 130px;
+}
+#genderlabel,#profile
+{
+	padding-left: 129px;
+}
+.inner-addon {
+    position: relative;
+}
+/* style icon */
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    opacity: 0.7;
+}
+/* align icon */
+.left-addon .glyphicon
+{
+    left:  0px;
+    margin-top:6px;
+}
+#email,#Password,#Firstname,#lastname,#dob
+{
+	background-color: #f2efef;
+	border:transparent;
+	height:50px;
+	padding-left: 40px;
+}
+#submit
+{
+	background-color: blue;
+	color:white;
+	margin:20px 0px 0px 300px;
+}
+img
+{
+	position: relative;
+	padding-left: 340px !important;
+	padding-bottom: 40px;
+	height: 100px;
+}
+.well
+{
+	background-color: #f6c0d2 !important;
+	color: black !important;
+	text-align: center;
+	font-weight: bolder;
+	padding: 10px !important;
+	display: none;
+}
+/*/*this is for email,password,dob*/
+
+#emailremove
+{
+	margin-top: 0;
+	padding-left: 320px;
+	font-size: 19px;
+	color: red !important;
+    float:right;
+    display: none;
+}
+/*this is for email,password,dob*/
+#emailsign
+{
+	margin-top: 0;
+	padding-left: 320px;
+	font-size: 19px;
+	color: green !important;
+    float:right;
+    display: none;
+}
+#passwordremove
+{
+	margin-top: 0;
+	padding-left: 320px;
+	font-size: 19px;
+	color: red !important;
+    float:right;
+    display: none;
+}
+/*this is for email,password,dob*/
+#passwordsign
+{
+	margin-top: 0;
+	padding-left: 320px;
+	font-size: 19px;
+	color: green !important;
+    float:right;
+    display: none;
+}
+
+#DOBremove
+{
+	margin-top: 0;
+	padding-left: 320px;
+	font-size: 19px;
+	color: red !important;
+    float:right;
+    display: none;
+}
+/*this is for email,password,dob*/
+#DOBsign
+{
+	margin-top: 0;
+	padding-left: 320px;
+	font-size: 19px;
+	color: green !important;
+    float:right;
+    display: none;
+}
+/*this is the style for only first name*/
+#nameremove
+{
+	margin-top: 0;
+	margin-bottom: 15px;
+    padding-left: 130px;
+    font-size: 19px;
+    color: red;
+    display: none;
+}
+/*this is only for firstname*/
+#namesign
+{
+	margin-top: 0;
+	margin-bottom: 15px;
+    padding-left: 130px;
+    font-size: 19px;
+    color: green;
+    display: none;
+}
+.pover
+{
+	margin-bottom: 10px;
+	padding:10px;
+}
