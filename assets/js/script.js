@@ -212,6 +212,7 @@ function date()
  	  $("#DOBremove").hide();
  	  $("#DOBsign").show();
  	  $("#dob").popover("hide");
+     $(".well").hide();
   }
     return true;
 }
